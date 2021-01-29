@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.Salody.mapper.BoardAttachDAO">
+  
+  	<insert id="insert">
+  		insert into tb1_upload
+  		values(#{bno},#{fileName},#{uploadPath},#{uuid})	
+  	</insert>
+  
+   	<select id="showImg" resultType="org.Salody.DTO.BoardAttachDTO">
+	  	select * from tb1_upload
+	  	where bno=#{bno};
+  	</select>
+  
+  </mapper>

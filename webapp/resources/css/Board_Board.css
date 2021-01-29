@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+.tab {
+	overflow: hidden;
+	background-color: #3cc8c8;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: "pointer";
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 14px
+}
+
+/*tab버튼에 hover 적용하기 */
+.tab button:hover {
+	background-color: #ddd;
+}
+
+div.List {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+h3 {
+	clear:both;
+	width: 1000px;
+	float: right;
+}
+
+table {
+	border-collapse: collapse;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	text-indent:initial;
+	border-spacing:2px;
+}
+tr{
+	border-bottom: 1px solid gray;
+}
+
+thead {
+	width: 100%;
+	text-align: center;
+	background-color: #ddd;
+	border-bottom: 1px solid gray;
+}
+
+th {
+	padding: 14px 14px 14px 14px;
+}
+
+tbody {
+	background-color: white;
+	border-bottom: 1px solid gray;
+}
+td{
+	padding:15px 5px 10px 5px;
+}
+td.writer {
+	color: #3cc8c8;
+	border-bottom: 1px solid gray;
+}
+
+.btn_wrap {
+	clear: both;
+	width: 1000px;
+	height: 60px;
+	padding: 15px 0 15px 0;
+	text-align: center;
+	float:right;
+}
+
+div.pageMaker {
+	clear: both;
+	width: 100%;
+	text-align:center;
+}
+
+div.bSearch {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+.enroll {
+	box-shadow: 0px 1px 0px 0px #3cc8c8;
+	background: #3cc8c8;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	width: 142px;
+	height: 46px;
+	text-decoration: none;
+	text-align: center;
+	float:right;
+}
+
+.txt_white {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.bSearch {
+	clear: both;
+	width: 800px;
+	height: 48px;
+	padding: 15px 0 25px 0;
+	text-align: center;
+}

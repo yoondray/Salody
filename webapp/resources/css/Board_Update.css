@@ -1,0 +1,49 @@
+
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+}
+#listUpdate{
+	width: 1000px;
+	height: 1000px;
+	margin-left: 460px;
+	margin-top: 100px;
+	align: center;
+}
+#uptListForm{
+	border-collapse: collapse;	
+	border-top: 1px solid #dfe9eb;
+}
+
+tr{
+	border-bottom: 1px solid #dfe9eb;
+		
+}
+.uptList{
+	background-color: #f7f7f7;
+	width: 200px;
+	height: 50px;
+}
+
+.udtput{
+	width: 500px;
+}
+#uptListBtn{
+	width: 180px;
+	margin: 0 auto;
+	margin-top: 50px;
+	float: left;
+}
+.uptBtn{
+	padding: 15px 15px 15px 15px;
+	color:white;
+	background: #3cc8c8;
+	border: 1px solid #3cc8c8;
+	
+}
+.delBtn{
+	padding: 15px 15px 15px 15px;
+	background: ghostwhite;
+	border: 1px solid gray;
+}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+
+.tab {
+	overflow: hidden;
+	background-color: #3cc8c8;
+}
+
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: "pointer";
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 14px
+}
+
+/*tab버튼에 hover 적용하기 */
+.tab button:hover {
+	background-color: #ddd;
+}

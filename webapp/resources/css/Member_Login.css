@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+#idpw{
+	text-align: center;
+	font-weight: bold;
+	line-width:normal;
+}
+
+
+#divT{
+	margin:auto;
+	width:900px;
+	margin-top:100px;
+}
+
+#logTable{
+	margin:140px auto;
+	border-collapse: collapse;
+}
+
+#up{
+	border-top: 4px solid #eeeeee;
+	height:20px;
+	
+}
+
+.wing{
+	width:30px;
+}
+
+#bc{
+	border-color:#f6f6f6;
+	
+}
+
+#login {
+    width:100px;
+    background-color: #282828;
+    border: none;
+    color:#fff;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.findIdPw{
+	width:60px;
+    background-color: white;
+    border: none;
+    color:gray;
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1px;
+    margin: 4px;
+    cursor: pointer;	
+}
+
+#security{
+	width:40px;
+    background-color: white;
+    border: none;
+    color:gray;
+    padding:0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1px;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+	text-align: center;
+}
+
+#secu3{
+	text-align:right;
+}
+
+#join {
+    width:200px;
+    background-color: #eeeeee;
+    border: none;
+    color:black;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+    font-weight: bold;    
+}
+
+#plusheight{
+	height:16px;	
+}
+
+#joinTable{
+text-align: center;
+}

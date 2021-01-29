@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+  font-family: Open Sans;
+}
+
+
+.salody-footer{
+background: #3cc8c8;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: 16px sans-serif;
+padding: 55px 50px;
+}
+
+.salody-footer .footer-left,
+.salody-footer .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.salody-footer .footer-left{
+width: 40%;
+}
+
+/* The company logo */
+
+.salody-footer .flogo{
+color:  #ffffff;
+font: normal 36px 'Open Sans', cursive;
+margin: 0;
+}
+
+/* Footer Right */
+
+.salody-footer .footer-right{
+width: 20%;
+}
+
+.salody-footer .footer_About{
+line-height: 20px;
+color: #ffffff;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.salody-footer .footer_About span{
+display: block;
+color: #ffffff;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.salody-footer .footer-icons{
+margin-top: 25px;
+}
+
+.salody-footer .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+.salody-footer{
+font: bold 14px sans-serif;
+}
+
+.salody-footer .footer-left,
+.salody-footer .footer-right{
+display: block;
+width: 100%;
+margin-bottom: 40px;
+text-align: center;
+}
+
+}

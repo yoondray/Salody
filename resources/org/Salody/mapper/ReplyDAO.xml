@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.Salody.mapper.ReplyDAO">
+	<insert id="replyIns">
+		insert tb1_reply (bno,replyText,replyPpl)
+		values (#{bno},#{replyText},#{replyPpl});
+	</insert>
+	
+	<select id="replyList" resultType="org.Salody.DTO.ReplyDTO">
+	 	select * from tb1_reply
+	 	where bno=#{bno}
+	</select>
+	
+	<delete id="replyDel">
+		delete from tb1_reply 
+		where reno=#{reno};
+	</delete>
+	
+	<update id="replyUpt">
+		update tb1_reply 
+		set replyText=#{replyText},
+			reupDate=sysdate()
+		where reno=#{reno}
+	</update>
+	 
+</mapper>

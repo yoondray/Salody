@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#container{
+   border:1px solid black;   
+   width:1200px;
+   margin:0 auto;
+}
+
+#header{   
+   border-bottom:1px solid black;
+}
+
+#left{
+   
+   width:199px;
+   float:left;
+   border-right:1px solid black;
+}
+
+#content{   
+   width:1000px;
+   float:right;
+}
+
+#footer{
+   border-top:1px solid black;
+   clear:both;
+}
