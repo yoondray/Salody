@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.Salody.mapper.BoardDAO">
+  	
+  	
+  
+  
+  	<!-- 글쓰기 DAO -->
+  	<insert id="write2">
+  		<!-- insert하기 전에(before) tb1_board와 tb1_upload를 연결해 주는 식 -->
+  		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+  			select max(bno)+1 bno from tb1_board;
+  		</selectKey>
+  		
+  			insert into tb1_board (title, writer, content)
+  			values (#{title},#{writer},#{content});
+  	</insert>
+  	
+  	<!-- 게시판 DAO -->
+  	<select id="list2" resultType="org.Salody.DTO.BoardDTO">
+  	select *
+	from (
+		select @rownum:=@rownum+1 as rownum, b.*
+		from (select @rownum:=0) as tmp, tb1_board as b
+		<if test='search == "t"'>
+		where title like concat('%',#{keyword},'%')
+		</if>
+		<if test='search == "c"'>
+		where content like concat('%',#{keyword},'%')
+		</if>
+		<if test='search == "tc"'>
+		where title like concat('%',#{keyword},'%')
+		or content like concat('%',#{keyword},'%')
+		</if>
+		<if test='search == "w"'>
+		where writer like concat('%',#{keyword},'%')
+		</if>
+		order by bno desc
+    	 ) as pagingboard
+    	 <![CDATA[where rownum>(#{pageNum}-1)*#{inAmount} and rownum<=#{pageNum}*#{inAmount};]]>
+  	</select>
+  	
+  	<select id="detail2" resultType="org.Salody.DTO.BoardDTO">
+  	select * from tb1_board
+  	where bno=#{bno};
+  	</select>
+  	
+  
+  	<update id="update2">
+  	update tb1_board set title=#{title},content=#{content}, visit=#{visit}+1 
+  	where bno=#{bno}; 
+  	</update>
+  	
+  	<delete id="delete2">
+  	delete from tb1_board where bno=#{bno}
+  	</delete>
+  	
+  	<select id="getTotal" resultType="int">
+  	select count(*) from tb1_board
+  	</select>
+  	
+  	<update id="brdHit">
+  	update tb1_board set visit=#{visit}+1
+  	where bno=#{bno}
+  	</update>
+  	
+  </mapper>
