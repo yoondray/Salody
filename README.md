@@ -1,8 +1,7 @@
 # Healthcare at home
-대한민국에서 Diet에 대한 관심이 크게 증가했지만
-2020년도, COVID-19가 발생하면서 Diet에 대한 관심은 점차 감소하였다. 
-그러나 HomeTraining(홈트)에 대한 관심이 증가하면서 이에 대한 정보들을
-:white_check_mark: 공유하기 위해 만든 다이어터들의 새로운 플랫폼
+대한민국에서 Naver 또는 Google에서 Diet를 검색하는 사람들이 점차 증가하고 있다.
+이는 사람들이 다이어트, 건강, 홈트레이닝 등에 관심이 생겼다는 것을 나타낸다. 
+:white_check_mark:정보를 공유하기 위해 만든 다이어터들의 새로운 플랫폼
 <br>
 
 ![Dashboard 1](https://user-images.githubusercontent.com/74237804/106859973-1f26ca80-6707-11eb-9948-fb6a32c30b92.png)
