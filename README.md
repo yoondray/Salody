@@ -1,12 +1,12 @@
 # Healthcare at home
-대한민국에서 Naver 또는 Google에서 Diet를 검색하는 사람들이 점차 증가하고 있다.
-이는 사람들이 다이어트, 건강, 홈트레이닝 등에 관심이 생겼다는 것을 나타낸다. 
+대한민국에서 Naver 또는 Google에서 Diet 검색량이 점차 증가하고 있다.<br>
+사람들이 다이어트, 건강, 홈트레이닝 등에 관심이 생겼고 이를 바탕으로<br> 
 :white_check_mark:정보를 공유하기 위해 만든 다이어터들의 새로운 플랫폼
 <br>
 
 ![Dashboard 1](https://user-images.githubusercontent.com/74237804/106859973-1f26ca80-6707-11eb-9948-fb6a32c30b92.png)
 
-[https://public.tableau.com/profile/yoo.park#!/?newProfile=&activeTab=0](url) by '@yoondray' 
+[https://public.tableau.com/profile/yoo.park#!/?newProfile=&activeTab=0](url) by @yoondray 
 <br><br>
 
 ## :apple:Team
