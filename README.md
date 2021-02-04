@@ -42,27 +42,8 @@
 :heavy_check_mark:기존의 JDBC(Java Database Connectivity)의 한계를 해결하기위해 Mybatis방식으로 개선<br>
 :heavy_check_mark:JQuery활용 - 휴대전화, 주소, 이메일 등 통합<br>
 :heavy_check_mark:게시판 MySQL rownum활용<br>
- `select * 
-from (
-  select @rownum :=@rownum+1 as rownum, b.*
-  from (select @rownum:=0) as tmp, tableName as b`<br>
-`public class Criteria {
-  private int pageNo;
-  private int index;
-  public Criteria() {
-   this(1,10);
-  }`<br>
 :heavy_check_mark: Ajax(동기식 활용-웹브라우저로 데이터 전달)<br>
- `$.ajax({
-type:"post",
-url:"/upload/action",
-data:formData,
-dataType:"JSON",
-processData:false,
-contentType:false,
-success:function(data){
-console.log(data);
-})`
+
 
 
 
